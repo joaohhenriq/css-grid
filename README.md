@@ -1,4 +1,4 @@
-#CSS GRID
+# CSS GRID
 
 - Bidimensional
 - Divisão de toda a página em linhas em colunas
@@ -13,20 +13,20 @@
 ## Propriedades
 
 ### Container
-- display: grid (inicia o container falando que é um grid)
-- grid-template-columns (fatia as colunas, diz quantas colunas o grid possui)
-- grid-template-rows (fatia as linhas, diz quantas linhas o grid vai possuir)
-- grid-gap (espaçamentos)
+- `display: grid` (inicia o container falando que é um grid)
+- `grid-template-columns` (fatia as colunas, diz quantas colunas o grid possui)
+- `grid-template-rows` (fatia as linhas, diz quantas linhas o grid vai possuir)
+- `grid-gap` (espaçamentos)
     - grid-row-gap (espaçamentos nas linhas)
     - grid-column-gap (espaçamentos nas colunas)
-- grid-template-areas (delimita areas do grid)
+- `grid-template-areas` (delimita areas do grid)
 
 
 ### Item(s)
-- grid-column
+- `grid-column`
     - grid-column-start
     - grid-column-end
-- grid-row
+- `grid-row`
     - grid-row-start
     - grid-row-end
-- grid-area
+- `grid-area`
