@@ -1,0 +1,44 @@
+:root {
+    --gap: 3rem /*cada rem vale 16px, logo 3 x 16 = 48px*/
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "footer footer footer"
+    ;
+    grid-template-rows: 100px calc(100vh - 246px) 50px; /*no calc subtrai o valor do header e do footer, e também os espaçamentos, que dão 6rem = 96px*/
+    grid-gap: var(--gap); /*primeiro parametro para linha, e segundo para a coluna*/
+    /*se deixar somente um valor como acima, joga esse espaçamento para linha e coluna ao mesmo tempo*/
+}
+
+.grid {
+    background: #333333;
+}
+
+.grid-header{
+    grid-area: header;
+}
+
+.grid-main{
+    grid-area: main;
+    margin-left: var(--gap);
+}
+
+.grid-aside{
+    grid-area: aside;
+    margin-right: var(--gap);
+}
+
+.grid-footer{
+    grid-area: footer;
+}
