@@ -10,6 +10,8 @@
 - `Flexbox`: Uma dimensão (ou coluna ou linha)
 - Um complementa o trabalho do outro
 
+
+
 ## Propriedades
 
 ### Container
@@ -30,3 +32,25 @@
     - grid-row-start
     - grid-row-end
 - `grid-area`
+
+
+
+## Grid: Alinhamento
+
+Existem 6 propriedades para alinhamento:
+1. `justify-content`
+2. `align-content`
+3. `justify-items`
+4. `align-items`
+5. `justify-self`
+6. `align-self`
+
+Vamos separá-los em 2 grupos
+1. `justify` e `align`
+2. `content`, `items` e `self`
+
+### Justify e Align
+
+Sabendo que o grid é bidimensional, nós temos o eixo x e o y.
+
+### Content, Items e Self
