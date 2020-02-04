@@ -1,3 +1,29 @@
-h1 {
-    color: red;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+}
+
+header {
+    background-color: salmon;
+}
+
+main {
+    background-color: green;
+}
+
+aside {
+    background-color: silver;
+}
+
+footer {
+    background-color: teal;
+}
+
+.container{
+    display: grid; /*primeiro define que o display é por grid*/
+    grid-template-columns: 3fr 1fr; /*Depois define a quantidade de colunas. Neste caso, de forma fracionária*/
+    grid-template-rows: 20vh 70vh 10vh; /*Define quanto vai ocupar cada linha. O vh é uma medida proporcional com a altura total da tela que é vista pelo usuário*/
+    /* grid-gap: 20px; Define o espaçamento entre os itens */
 }
