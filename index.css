@@ -7,18 +7,22 @@ html, body {
 
 header {
     background-color: salmon;
+    grid-area: header;
 }
 
 main {
     background-color: green;
+    grid-area: main;
 }
 
 aside {
     background-color: silver;
+    grid-area: aside;
 }
 
 footer {
     background-color: teal;
+    grid-area: footer;
 }
 
 .container{
@@ -26,4 +30,8 @@ footer {
     grid-template-columns: 3fr 1fr; /*Depois define a quantidade de colunas. Neste caso, de forma fracionária*/
     grid-template-rows: 20vh 70vh 10vh; /*Define quanto vai ocupar cada linha. O vh é uma medida proporcional com a altura total da tela que é vista pelo usuário*/
     /* grid-gap: 20px; Define o espaçamento entre os itens */
+    grid-template-areas: "header header" /*diz que na primeira linha, as duas colunas representam o header*/
+                         "main aside" /*diz que na segunda linha, uma coluna representa o main, e a outra o aside*/
+                         "footer footer" /*diz que na terceira linha, as duas colunas representam o footer*/;
+                         /*os nomes acima podem ser qualquer coisa, pq serão chamados em cada tag que os necessita, com o grid-area*/
 }
