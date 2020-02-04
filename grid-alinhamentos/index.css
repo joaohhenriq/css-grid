@@ -12,15 +12,25 @@ html, body {
     height: 100vh; 
 
     display: grid;
-    grid-template-columns: 10px 10px 10px; /*1fr 1fr 1fr*/
-    grid-template-rows: 10px 10px 10px; /*1fr 1fr 1fr*/
+    grid-template-columns: 1fr 1fr 1fr; /*10px 10px 10px*/
+    grid-template-rows: 1fr 1fr 1fr; /*10px 10px 10px*/
     grid-gap: 5px;
 
 
     /* justify-content: space-evenly; no eixo x */
     /* align-content: space-evenly; no eixo y */
+
+    /*posiciona os itens denro do grid em determinada posição*/
+    /* justify-items: center;
+    align-items: center; */
 }
 
 .container > div {
     background: black;
+    width: 50%;
+    height: 50%;
+
+    /*aplicado no item em específico*/
+    justify-self: center;
+    align-self: center;
 }
