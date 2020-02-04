@@ -1,0 +1,15 @@
+@import url('config.css');
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 35px auto auto;
+    /* grid-template-columns: repeat(10, 1fr); em vez de repetir o 1fr 10 vezes, usa o metodo repeat*/ 
+    grid-template-rows: auto;
+}
+
+.cx-6{
+    z-index: 1; /*define o nível de prioridade, para sobrepor os outros componentes*/
+    width: 100px;
+    height: 100px;
+}
