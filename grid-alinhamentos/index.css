@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh; 
+
+    display: grid;
+    grid-template-columns: 10px 10px 10px; /*1fr 1fr 1fr*/
+    grid-template-rows: 10px 10px 10px; /*1fr 1fr 1fr*/
+    grid-gap: 5px;
+
+
+    /* justify-content: space-evenly; no eixo x */
+    /* align-content: space-evenly; no eixo y */
+}
+
+.container > div {
+    background: black;
+}
